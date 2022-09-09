@@ -1,0 +1,25 @@
+﻿Build started 9/22/2020 11:17:55 AM.
+     1>Project "D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\iGraphics Project\iGraphics Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\iGraphics Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt WARS71.cpp
+         WARS71.cpp
+     1>d:\igraphicsultimate\igraphicsultimate\igraphics project\igraphics project\wars71.cpp(391): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\igraphicsultimate\igraphicsultimate\igraphics project\igraphics project\wars71.cpp(395): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : see declaration of 'fscanf'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\iGraphics Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.lib" /MACHINE:X86 Debug\WARS71.obj
+         LINK : D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.exe not found or not built by the last incremental link; performing full link
+         iGraphics Project.vcxproj -> D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\Debug\iGraphics Project.exe;#1" /manifest "Debug\iGraphics Project.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\iGraphics Project.unsuccessfulbuild".
+         Touching "Debug\iGraphics Project.lastbuildstate".
+     1>Done Building Project "D:\iGraphicsUltimate\iGraphicsUltimate\iGraphics Project\iGraphics Project\iGraphics Project.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.18

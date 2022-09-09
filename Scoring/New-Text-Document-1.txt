@@ -1,0 +1,34 @@
+//high score name input
+char nameStr[20] = {}, nameStr2[20] = {};
+int nameLength = 0, nameMode = 0, thanks = 0;
+
+
+
+//score
+int myScore = 0, myScoreCopy;
+char myScoreText[10];
+void score()
+{
+	sprintf_s( myScoreText, 10, "%d", myScore );
+	iSetColor(255, 255, 0);
+	iFilledRectangle(15,570, 150, 25);
+	iSetColor(0, 0, 0);
+	iText(20, 575, "Score:", GLUT_BITMAP_TIMES_ROMAN_24);
+	iText(85, 575, myScoreText, GLUT_BITMAP_TIMES_ROMAN_24);
+	myScoreCopy = myScore;
+}
+
+
+for(int i=0; i<4; i++)//car-coin collision
+	{
+		if(playerXpos+45 >= coinXpos[i] && playerXpos <= coinXpos[i]+45 && playerYpos+95 >= coinYpos[i] && playerYpos <= coinYpos[i]+45)
+		{
+			coinYpos[i] = 900 + coinYpos[i];
+			if(i==0 || i==3)//gold coin
+				myScore += 20;
+			else//silver coin
+				myScore +=10;
+		}
+
+
+

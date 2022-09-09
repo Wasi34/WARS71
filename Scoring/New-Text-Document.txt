@@ -1,0 +1,53 @@
+//high score file	
+FILE *fp;
+char name[20] = {}, name2[20] = {}, nameTemp[20] = {}, point[10] = {};
+int score1, score2, scoreTemp,  jnameTemp;
+
+struct highscore
+{
+	char nameTemp[20];
+	int scoreTemp;
+}members[20];
+
+int speedMultiple = 1;
+int gameState = 0;
+int mode = 0;
+int difficultyLevel = 0;
+int counter = 0;
+int nos = 1;
+char keyAssign;
+
+//high score name input
+char nameStr[20] = {}, nameStr2[20] = {};
+int nameLength = 0, nameMode = 0, thanks = 0;
+
+if(gameState == 4)//highscore page
+	{
+		iShowImage(0, 0, 800, 600, highscorePage);
+		iSetColor(255, 255, 255);
+		//file
+		int namePosition = 400;
+		fp = fopen("Highscore file.txt","r");
+		for(int i=0; i<5; i++)
+		{
+			fscanf(fp, "%s %d", name, score1);
+			fscanf(fp, "%s %d", name2, score2);
+			if(score1<score2)
+			{
+				nameTemp = name;
+				scoreTemp = score1;
+				name = name2;
+				score1 = score2;
+				name2 = nameTemp;
+			score2 = scoreTemp;
+			fprintf(fp, %s %s, nam
+			}
+		}
+		for(int i=0; i<5; i++)
+		{
+			namePosition -= 40;
+			fscanf(fp, "%s %s", name, point);
+			iText(200, namePosition, name, GLUT_BITMAP_TIMES_ROMAN_24);
+			iText(500, namePosition, point, GLUT_BITMAP_TIMES_ROMAN_24);
+		}
+		fclose(fp);
