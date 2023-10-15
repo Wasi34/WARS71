@@ -1,5 +1,5 @@
 # WARS71 
-It's a 1st-year 2nd-semester Igraphics project.
+It's a 1st-year 2nd-semester Igraphics project.<br/> 
  <br/> Course Name: Software Development-I
  <br/> Course Code: CSE 1200
 
