@@ -1,7 +1,7 @@
 # WARS71 
-It's a 1st year 2nd semester igraphics project.
- <br />Course Name: Software Development-I
- <br />Course Code: CSE 1200
+It's a 1st-year 2nd-semester Igraphics project.
+ <br/> Course Name: Software Development-I
+ <br/> Course Code: CSE 1200
 
 WARS71 is a game based on our 1971 liberation war.
 
